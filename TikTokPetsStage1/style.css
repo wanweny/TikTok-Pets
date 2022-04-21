@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+#top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10%;
+  margin-bottom: 0;
+}
+
+#bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo{
+  font-family: 'Boogaloo', cursive;
+  font-size: 32px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: linear-gradient(to bottom right, rgba(238, 29, 82, 0.9), rgb(105, 201, 208));
+}
+
+#boxContents{
+  display: flex;
+  flex-direction: column;
+  justfy-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 40px; 
+}
+
+#submitTitle{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+  margin-top: 0;
+}
+
+#inputBoxes{
+  width: 100%;
+  margin: 0;
+}
+
+input{
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  text-indent: 10px;
+  height: 50px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+label{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+
+#bottom{
+  display: flex;
+  justify-content: center;
+}
+
+button.pinkBox{
+  background-color: rgba(238,29,82,0.9);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  height: 55px;
+  width: 125px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/** Tablet View **/
+@media (min-width: 480px){
+  #logo{
+  font-size: 48px;
+  }
+  
+  button.pinkBox{
+    font-size: 20px;
+    font-weight: 600;
+    width: 220px;
+  }
+  
+    #submitTitle{
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+
+/** desktop view **/
+@media (min-width: 900px) {
+  /***调logo位置居中****/
+  #logo{
+    position: relative;
+  }
+
+  #top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  button#videos {
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+  }
+/*****/
+  
+}

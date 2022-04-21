@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo{
+  font-family: 'Boogaloo', cursive;
+  font-size: 32px;
+  margin-top: 5vh;
+}
+
+#container{
+  font-family: 'Boogaloo', cursive;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25vh;
+}
+
+#videoName {
+    color: rgba(238,29,82,0.9);
+}
+
+button.pinkBox{
+  background-color: rgba(238,29,82,0.9);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  height: 55px;
+  width: 125px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10vh;
+}
+
+/** Tablet View **/
+@media (min-width: 480px){
+  #logo{
+  font-size: 48px;
+  }
+  
+  button.pinkBox{
+    font-size: 20px;
+    font-weight: 600;
+    width: 220px;
+  }
+
+  #container{
+  font-size: 40px;
+  }
+}
+  
+  /** desktop view **/
+@media (min-width: 900px) {
+  #logo{
+    font-size: 48px;
+  }
+
+  button.pinkBox{
+    font-size: 20px;
+    font-weight: 600;
+    width: 220px;
+  }
+
+  #container{
+  font-size: 48px;
+  }
+}
